@@ -35,6 +35,12 @@ class AuthTest extends TestCase
             ->seePageIs('/home');
     }
 
+    /**
+     * Create a test user.
+     * 
+     * @param  array  $attributes
+     * @return App\User
+     */
     private function user(array $attributes = [])
     {
         if (!is_null($this->user)) {
